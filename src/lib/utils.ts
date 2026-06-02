@@ -5,7 +5,9 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export const fadeInUp = {
+import type { Variants } from "framer-motion";
+
+export const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1,
@@ -14,7 +16,7 @@ export const fadeInUp = {
   },
 };
 
-export const fadeIn = {
+export const fadeIn: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -22,7 +24,7 @@ export const fadeIn = {
   },
 };
 
-export const staggerContainer = {
+export const staggerContainer: Variants = {
   hidden: {},
   visible: {
     transition: {
@@ -32,7 +34,7 @@ export const staggerContainer = {
   },
 };
 
-export const slideInLeft = {
+export const slideInLeft: Variants = {
   hidden: { opacity: 0, x: -40 },
   visible: {
     opacity: 1,
@@ -41,7 +43,7 @@ export const slideInLeft = {
   },
 };
 
-export const slideInRight = {
+export const slideInRight: Variants = {
   hidden: { opacity: 0, x: 40 },
   visible: {
     opacity: 1,
@@ -50,7 +52,7 @@ export const slideInRight = {
   },
 };
 
-export const scaleIn = {
+export const scaleIn: Variants = {
   hidden: { opacity: 0, scale: 0.9 },
   visible: {
     opacity: 1,
